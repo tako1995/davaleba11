@@ -1,0 +1,49 @@
+.container{
+    max-width: 1440px;
+    width: 100%;
+    padding: 0px 9% 48px;
+    margin: auto;
+    display: grid;
+    column-gap: 20px;
+    grid-template-rows: 120px 300px 20px 160px 64px 206px ;
+    grid-template-columns: 1fr 1fr 1fr;
+     grid-template-areas: "main_header main_header main_header"
+                          "cover cover first_section" 
+                          ""
+                          ""
+                          ""
+                          "";
+
+}
+
+.main_header{
+    background-color: aqua;
+    grid-area:main_header ;
+}
+
+.cover{
+    background-color: blue;
+    grid-area:cover ;
+}
+
+
+.first_section{
+    background-color: blueviolet;
+     grid-area: first_section ;
+}
+
+
+.text{
+    background-color: chartreuse;
+     grid-area: text ;
+}
+
+.button_text{
+    background-color: darkgreen;
+    grid-area: button_text ;
+}
+
+.footer{
+    background-color: coral;
+    grid-area: footer ;
+}
